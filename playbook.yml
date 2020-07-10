@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - role: robertdebock.bootstrap
+    - role: robertdebock.core_dependencies
+    - role: robertdebock.java
+    - role: robertdebock.eclipse
